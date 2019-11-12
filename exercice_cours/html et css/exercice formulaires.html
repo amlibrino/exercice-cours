@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>  
+        <meta charset="UTF-8">
+        <title>formulaires</title>
+    </head>
+    <body>
+        <p>* Ces zones sont obligatoires</p>
+        <form action="http://bienvu.net/script.php" method="post">
+            <fieldset>
+            <legend> Coordonnnées </legend>
+            <label for="nom"> Votre nom*: </label>
+            <input type="text" name="nom" id="nom"required><br>
+
+            <label for="prénom"> Votre prénom*: </label>
+            <input type="text" name="prénom" id="prénom"required><br>
+
+            <div><label for="sexe"> Sexe* :</label><br>
+            <input type="radio" name="sexe" id="sexe" required value="Féminin"> Féminin 
+            <input type="radio" name="sexe" id="sexe" required value="Masculin"> Masculin </div>
+
+            <label for="date de naissance"> Date de naissance*</label>
+            <input type="date" name="date de naissance" id="date de naissance"required> <br>
+
+            Code postal : <input type="text" name="code postal" maxlength="5"><br>
+            Adresse : <input type="text" name="Adresse"><br>
+            Ville : <input type="text" name="Ville"><br>
+            Email* <input type="text" name="email" placeholder="deve.loper@afpa.fr" required>
+            </fieldset>
+
+
+            <fieldset>
+            <legend> Votre demande </legend>
+            <p>Sujet* : 
+            <select name="commande" size="1" required>
+                <option value="Mes demandes"checked> Mes demandes 
+                <option value="Question sur un produit"> Question sur un produit 
+                <option value="Réclamation"> Reclamation
+                <option value="Autres"> Autres
+            </select> </p> 
+           <label for="Votre question"> Votre question* : </label> <textarea name="" id="Votre Question" cols="30" rows="3" required></textarea>
+            </fieldset>  
+            <input type="checkbox" required> J'accepte le traitement informatique de ce formulaire<br>
+            <input type="submit" value="Envoyer">       
+            <input type="reset" value="annuler">
+        </form>
+    </body>
+</html>

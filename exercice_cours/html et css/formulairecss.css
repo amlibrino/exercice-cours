@@ -1,0 +1,69 @@
+fieldset
+{
+    border-radius: 20px;
+}
+input
+{
+    background: khaki;
+}
+
+legend
+{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.zone
+{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/*ccs du site de base*/
+.jardin
+{
+    float: right;
+    font-size: 20pt; /*taille de la police*/
+    font-style: italic; /*italic, oblique, normal*/
+    font-weight: bold; /* gras*/
+    text-decoration: underline; /* souligné, barré...*/
+    display: inline; /*tout mettre à la ligne*/
+    margin-right: 35%;
+}
+.logo
+{
+    position: relative;
+}
+li
+{
+ display:inline ;
+}
+nav
+{
+    background: rgb(81, 92, 88); /*couleur de fond*/
+    line-height: 50px; 
+    border: 2px solid rgb(42, 9, 228); /*bordure, solid(forme de la bordure), coleur*/
+    border-radius: 10px;
+    font-size: 1.2em;
+  
+}
+a
+{
+    color: white;
+}
+footer
+{ 
+    background: rgb(67, 153, 124);
+    line-height: 50px; /*interligne*/
+    border: 2px dashed rgb(228, 9, 27);
+    border-radius: 10px;
+    font-size: 1.2em;
+
+}
+.lames
+{
+    width: 100%; 
+    height:250px;
+    box-shadow: 20px 20px 20px rgb(93, 99, 93); /*faire de l'ombre*/
+    border-radius: 10px; /*bordure arondie*/
+    margin-bottom: 10px;
+}

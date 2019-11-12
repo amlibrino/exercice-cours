@@ -1,0 +1,47 @@
+phase 3
+1. Quelles sont les commandes du fournisseur 09120 ?
+SELECT numcom, numfou FROM entcom WHERE numfou='9120';
+
+2. Afficher le code des fournisseurs pour lesquels des commandes ont été passées.
+SELECT COUNT(numcom) AS "Commandes passées", numfou AS "Nombre de fournisseurs" 
+FROM entcom
+GROUP BY numfou;
+
+3. Afficher le nombre de commandes fournisseurs passées, et le nombre de
+fournisseur concernés.
+SELECT COUNT(numcom) AS "Commandes passées", COUNT(DISTINCT(numfou)) AS "Nombre de fournisseurs" 
+FROM entcom; -- distinct pour eviter de prendre plusieur fois le meme numéro de fournisseur
+
+
+
+
+
+
+phase 4
+
+1)UPDATE vente
+SET prix1 = prix1*1.04, prix2 = prix2*1.02
+WHERE numfou = '09180';
+
+2)
+-- 2. Dans la table vente, mettre à jour le prix2 des articles dont le prix2 est null, en affectant a valeur de prix.
+
+UPDATE vente
+SET prix2 = prix1
+WHERE prix2='0';
+
+3)
+-- 3.Mettre à jour le champ obscom en positionnant '*****' pour toutes les commandes dont le fournisseur a un indice de satisfaction <5
+UPDATE entcom JOIN fournis ON fournis.numfou=entcom.numfou SET obscom='*****'  WHERE satisf<5;
+
+UPDATE entcom
+JOIN fournis ON entcom.numfou = fournis.numfou
+SET obscom = '*****'
+WHERE satisf < 5;
+
+4)
+DELETE FROM vente
+WHERE codart ='I110';
+
+DELETE FROM produit
+WHERE codart ='I110';

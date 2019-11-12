@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>exo1 evenement</title>
+</head>
+<body>
+   <!--var monForm = document.getElementById("idForm");-->
+   <!--var images = document.getElementsByTagName("img");-->
+   <form>
+      <label for="prenom"> saisissez un texte puis pressez le bouton 'Controler' </label><br>
+      <input type="text" name="prenom" id="prenom">
+      <input type="submit" value="Controler" id="boutton">
+   </form>
+    <script>
+       var element = document.getElementById("prenom"); // l'element qu'on veut lire 
+       var boutton = document.getElementById("boutton").onclick=function()
+         {
+          alert("vous avez saisi "+element.value);
+         }   //(alert("vous avez saisi "+prenom));// l'element la ou yaura l'evenement
+       
+    </script>
+ </body>
+</html>

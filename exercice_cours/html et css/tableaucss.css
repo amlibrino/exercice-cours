@@ -1,0 +1,82 @@
+table, tr, td, th 
+{ 
+   border: 1px solid #000000; /*bordurdu tableau*/
+   border-collapse: collapse;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;/*choisir la police*/
+   background-image:url(c5d390f48e_116523_neige-montagne.jpg); /*mettre une image en fond*/
+
+}
+.logo
+{
+    position: relative;
+    width:300px;
+    height: 100px;
+}
+caption
+{
+    border: 1px solid black;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    font-size: 2em;
+}
+.imgtableau 
+{
+    width: 200px;
+    height: 150px;
+    border: 1px solid rgb(122, 172, 230);
+    border-radius: 20px;
+}
+th
+{
+    color: blue;
+    background: khaki;
+}
+td
+{
+text-align: center;
+}
+
+/*ccs du site de base*/
+.jardin
+{
+    float: right;
+    font-size: 20pt; /*taille de la police*/
+    font-style: italic; /*italic, oblique, normal*/
+    font-weight: bold; /* gras*/
+    text-decoration: underline; /* souligné, barré...*/
+    display: inline; /*tout mettre à la ligne*/
+    margin-right: 35%;
+}
+li
+{
+ display:inline ;
+}
+nav
+{
+    background: rgb(81, 92, 88); /*couleur de fond*/
+    line-height: 50px; 
+    border: 2px solid rgb(42, 9, 228); /*bordure, solid(forme de la bordure), coleur*/
+    border-radius: 10px;
+    font-size: 1.2em; 
+}
+a
+{
+    color: white;
+}
+footer
+{ 
+    background: rgb(67, 153, 124);
+    line-height: 50px; /*interligne*/
+    border: 2px dashed rgb(228, 9, 27);
+    border-radius: 10px;
+    font-size: 1.2em;
+}
+.lames
+{
+    width: 100%; 
+    height:250px;
+    box-shadow: 20px 20px 20px rgb(93, 99, 93); /*faire de l'ombre*/
+    border-radius: 10px; /*bordure arondie*/
+    margin-bottom: 10px;
+}
+    
